@@ -21,21 +21,36 @@ public class HelenUIScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+
+
         EtoInteract.SetActive(IsInRange);
-
-
-
-        if (IsInRange)
+        if (IsInRange/*&& !Pratat*/)
         {
-            if (Input.GetKeyDown(KeyCode.E)/*&& !Pratat*/)
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log("Pratning med Hamada");
-
+                Debug.Log("Interact med Helen");
+                startFrågesport();
                 UIText.SetActive(true);
                 //Pratat = true;
             }
         }
+
+
+
     }
+
+    private void startFrågesport()
+    {
+
+    }
+
+
+
+
+
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
