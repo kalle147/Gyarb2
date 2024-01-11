@@ -9,16 +9,16 @@ public class FrågesportScript : MonoBehaviour
 
     public TextMeshProUGUI frågeText; //Text för frågerutan
     public TextMeshProUGUI[] svarText = new TextMeshProUGUI[3]; //Text för Svar knappar
-
-    //private bool[] rättSvar = new bool[3];  
+    
+    public TextMeshProUGUI dialog;
+    public GameObject dialogBox;
+    
+    public GameObject QuizUI;
 
     private int[] rättSvar = { 1, 2, 3 };  //Rätt svar för fråga 1,2,3
 
-
-    int[] dittSvar = new int[3];
-
     int index = 0;
-
+    bool quizEnded;
 
 
 
@@ -27,11 +27,23 @@ public class FrågesportScript : MonoBehaviour
     {
         fråga(index);
     }
- 
+
+    private void Update()
+    {
+        if( quizEnded)
+        {
+            //reset om man gör om quizet
+            index = 0;
+            quizEnded = false; 
+
+            dialogBox.SetActive(true);
+            QuizUI.SetActive(false);
+        }
+    }
+
     public void svar1()
     {
         Debug.Log("Svarat: 1");
-        dittSvar[index] = 1;
         if (rättSvar[index] == 1)
         {
             Debug.Log("Rätt svar");
@@ -42,7 +54,6 @@ public class FrågesportScript : MonoBehaviour
     public void svar2()
     {
         Debug.Log("Svarat: 2");
-        dittSvar[index] = 2;
         if (rättSvar[index] == 2)
         {
             Debug.Log("Rätt svar");
@@ -53,7 +64,6 @@ public class FrågesportScript : MonoBehaviour
     public void svar3()
     {
         Debug.Log("Svarat: 3");
-        dittSvar[index] = 3;
         if (rättSvar[index] == 3)
         {
             Debug.Log("Rätt svar");
@@ -104,14 +114,18 @@ public class FrågesportScript : MonoBehaviour
     void allaRätt()
     {
         Debug.Log("Du vann frågesporten");
-
+        fråga(0);
+        dialog.text = "Grattis! Du klarade frågesporten, du får en nyckel av mig.";
+        quizEnded = true;
         // Keys++
     }
 
     void felSvar()
     {
         Debug.Log("Du torska frågesporten");
-        index = 0;
+        dialog.text = "Fel svar! Du kan försöka igen om du vill...";
+        fråga(0);
+        quizEnded = true;
     }
 
 }

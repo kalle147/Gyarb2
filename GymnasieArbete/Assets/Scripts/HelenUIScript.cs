@@ -8,7 +8,7 @@ public class HelenUIScript : MonoBehaviour
 {
     
 
-    public GameObject UIText;
+    public GameObject QuizUI;
     public GameObject EtoInteract;
 
     //private bool Pratat;
@@ -31,8 +31,8 @@ public class HelenUIScript : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log("Interact med Helen");
-                startFrågesport();
-                UIText.SetActive(true);
+                
+                QuizUI.SetActive(true);
                 //Pratat = true;
             }
         }
@@ -40,15 +40,6 @@ public class HelenUIScript : MonoBehaviour
 
 
     }
-
-    private void startFrågesport()
-    {
-
-    }
-
-
-
-
 
 
 
