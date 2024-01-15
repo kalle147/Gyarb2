@@ -7,32 +7,40 @@ public class HamadaUIScript : MonoBehaviour
 {
 
     public GameObject UIText;
+    public GameObject UIText2;
+
     public GameObject EtoInteract;
-    
-    //private bool Pratat;
+
+    public GameObject RobotCarried;
+    public GameObject RobotFinal;
+    public robot robot;
+
+    public bool Pratat;
     public bool IsInRange;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   
 
     // Update is called once per frame
     void Update()
     {
         EtoInteract.SetActive(IsInRange);
-
+        if (robot.PickedUp) Debug.Log("PickUp");
 
 
         if (IsInRange)
         {
-            if (Input.GetKeyDown(KeyCode.E)/*&& !Pratat*/)
+            if (Input.GetKeyDown(KeyCode.E) && !Pratat)
             {
                 Debug.Log("Pratning med Hamada");
 
                 UIText.SetActive(true);
-                //Pratat = true;
+                Pratat = true;
+            } else if(Input.GetKeyDown(KeyCode.E) && robot.PickedUp)
+            {
+                RobotFinal.SetActive(true);
+                RobotCarried.SetActive(false);
+                UIText2.SetActive(true);
+                //Key++
             }
         }
     }
