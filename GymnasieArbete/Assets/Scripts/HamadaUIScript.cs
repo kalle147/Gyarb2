@@ -29,7 +29,7 @@ public class HamadaUIScript : MonoBehaviour
 
         if (IsInRange)
         {
-            if (Input.GetKeyDown(KeyCode.E) && !Pratat)
+            if (Input.GetKeyDown(KeyCode.E) && !robot.PickedUp)
             {
                 Debug.Log("Pratning med Hamada");
 

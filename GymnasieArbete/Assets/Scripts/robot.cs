@@ -18,7 +18,7 @@ public class robot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        EtoInteract.SetActive(IsInRange);
+        if (hamadaUIScript.Pratat) EtoInteract.SetActive(IsInRange);
 
 
 
