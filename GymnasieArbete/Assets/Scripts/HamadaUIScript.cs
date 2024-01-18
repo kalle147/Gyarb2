@@ -18,14 +18,15 @@ public class HamadaUIScript : MonoBehaviour
     public bool Pratat;
     public bool IsInRange;
 
-   
+    public KeyManager KeyManager;
+
+    bool keyFromHamada;
 
     // Update is called once per frame
     void Update()
     {
         EtoInteract.SetActive(IsInRange);
-        if (robot.PickedUp) Debug.Log("PickUp");
-
+        
 
         if (IsInRange)
         {
@@ -40,7 +41,16 @@ public class HamadaUIScript : MonoBehaviour
                 RobotFinal.SetActive(true);
                 RobotCarried.SetActive(false);
                 UIText2.SetActive(true);
-                //Key++
+
+                
+                if (keyFromHamada == false) // gör så den kommer ihåg genom olika scenes
+                {
+                    keyFromHamada = true;
+                    KeyManager.addKey();
+                }
+                    
+                    
+                    
             }
         }
     }

@@ -7,6 +7,7 @@ public class ChangeScene : MonoBehaviour
 {
 
     public string SceneName;
+    public int keys;
 
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -14,6 +15,10 @@ public class ChangeScene : MonoBehaviour
         Debug.Log("Trigger Enter");
         if (other.tag == "Player")
         {
+            
+            //PlayerPrefs.SetInt("keys", keys);
+            //Debug.Log(PlayerPrefs.GetInt("keys", 0).ToString());
+
             Debug.Log("Changing Scene");
             SceneManager.LoadSceneAsync(SceneName);
         }

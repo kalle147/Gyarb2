@@ -15,6 +15,8 @@ public class FrågesportScript : MonoBehaviour
     
     public GameObject QuizUI;
 
+    public KeyManager KeyManager;
+
     private int[] rättSvar = { 1, 2, 3 };  //Rätt svar för fråga 1,2,3
 
     int index = 0;
@@ -118,6 +120,7 @@ public class FrågesportScript : MonoBehaviour
         dialog.text = "Grattis! Du klarade frågesporten, du får en nyckel av mig.";
         quizEnded = true;
         // Keys++
+        KeyManager.addKey();
     }
 
     void felSvar()
