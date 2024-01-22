@@ -120,7 +120,12 @@ public class FrågesportScript : MonoBehaviour
         dialog.text = "Grattis! Du klarade frågesporten, du får en nyckel av mig.";
         quizEnded = true;
         // Keys++
-        KeyManager.addKey();
+        if (!ObtainedHelenKey()) // inte redan fått den
+        {
+            GainHelenKey();
+            KeyManager.addKey();
+        }
+        
     }
 
     void felSvar()
@@ -131,4 +136,16 @@ public class FrågesportScript : MonoBehaviour
         quizEnded = true;
     }
 
+
+    private bool ObtainedHelenKey()
+    {
+        if (PlayerPrefs.GetInt("HelenKey") == 1)
+        { return true; }
+        else { return false; }
+    }
+
+    private void GainHelenKey()
+    {
+        PlayerPrefs.SetInt("HelenKey", 1);
+    }
 }

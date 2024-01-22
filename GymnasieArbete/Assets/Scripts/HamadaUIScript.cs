@@ -20,7 +20,7 @@ public class HamadaUIScript : MonoBehaviour
 
     public KeyManager KeyManager;
 
-    bool keyFromHamada;
+    
 
     // Update is called once per frame
     void Update()
@@ -43,14 +43,11 @@ public class HamadaUIScript : MonoBehaviour
                 UIText2.SetActive(true);
 
                 
-                if (keyFromHamada == false) // gör så den kommer ihåg genom olika scenes
+                if (!ObtainedHamadaKey()) // inte redan fått den
                 {
-                    keyFromHamada = true;
+                    GainHamadaKey();
                     KeyManager.addKey();
-                }
-                    
-                    
-                    
+                }     
             }
         }
     }
@@ -71,6 +68,19 @@ public class HamadaUIScript : MonoBehaviour
             IsInRange = false;
             Debug.Log("Player is NOT in range");
         }
+    }
+
+
+
+    private bool ObtainedHamadaKey()
+    {
+        if (PlayerPrefs.GetInt("HamadaKey") == 1) 
+        { return true;} else { return false;}
+    }
+
+    private void GainHamadaKey()
+    {
+        PlayerPrefs.SetInt("HamadaKey", 1);
     }
 
 }

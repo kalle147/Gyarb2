@@ -20,6 +20,11 @@ public class KeyPickup : MonoBehaviour
         {
             
             Debug.Log("Key Interact");
+            if (!ObtainedMazeKey()) // inte redan fått den
+            {
+                GainMazeKey();
+                KeyManager.addKey();
+            }
             KeyManager.addKey();
 
             EtoInteract.SetActive(false);
@@ -47,4 +52,18 @@ public class KeyPickup : MonoBehaviour
             Debug.Log("Key NOT in range");
         }
     }
+
+    
+
+private bool ObtainedMazeKey()
+{
+    if (PlayerPrefs.GetInt("MazeKey") == 1)
+    { return true; }
+    else { return false; }
+}
+
+private void GainMazeKey()
+{
+    PlayerPrefs.SetInt("MazeKey", 1);
+}
 }
