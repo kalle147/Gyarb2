@@ -120,7 +120,7 @@ public class FrågesportScript : MonoBehaviour
         dialog.text = "Grattis! Du klarade frågesporten, du får en nyckel av mig.";
         quizEnded = true;
         // Keys++
-        if (!ObtainedHelenKey()) // inte redan fått den
+        if (!ObtainedHelenKey()) // om inte redan fått den
         {
             GainHelenKey();
             KeyManager.addKey();

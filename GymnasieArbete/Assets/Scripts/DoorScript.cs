@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class DoorScript : MonoBehaviour
@@ -8,6 +9,7 @@ public class DoorScript : MonoBehaviour
     public GameObject EtoInteract;
     bool IsInRange;
     public KeyManager KeyManager;
+    public GameObject dialog;
 
     // Update is called once per frame
     void Update()
@@ -23,7 +25,7 @@ public class DoorScript : MonoBehaviour
                 gameObject.SetActive(false);
             } else
             {
-                //dialogruta du har inte tillräckligt med nycklar
+                dialog.SetActive(true);
                 Debug.Log("Not enough keys");
             }
         }

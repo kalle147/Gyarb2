@@ -7,7 +7,7 @@ public class ChangeScene : MonoBehaviour
 {
 
     public string SceneName;
-    public int keys;
+    
 
 
     private void OnTriggerEnter2D(Collider2D other)

@@ -15,17 +15,17 @@ public class KeyManager : MonoBehaviour
     {
         keys = PlayerPrefs.GetInt("keys", 0);
         Debug.Log("Keys from last scene: " + keys);
-
     }
 
     private void Update()
     {
-        PlayerPrefs.SetInt("keys", keys);
         keyCount.text = keys.ToString();
+        PlayerPrefs.SetInt("keys", keys);
     }
 
     public void addKey()
     {
         if(keys <= 2) keys++;
+        
     }
 }

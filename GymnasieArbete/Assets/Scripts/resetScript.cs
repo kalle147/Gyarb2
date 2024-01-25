@@ -10,7 +10,7 @@ public class resetScript : MonoBehaviour
     {
 
         KeyManager.keys = 0;
-       
+        PlayerPrefs.SetInt("keys", 0);
         PlayerPrefs.SetInt("HamadaKey", 0);
         PlayerPrefs.SetInt("HelenKey", 0);
         PlayerPrefs.SetInt("MazeKey", 0);

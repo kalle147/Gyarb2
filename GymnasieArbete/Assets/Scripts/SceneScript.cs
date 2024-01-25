@@ -8,13 +8,21 @@ public class MainMenuScript : MonoBehaviour
 
     public void playGame()
     {
+        resetGame();
         SceneManager.LoadSceneAsync("Map1");
     }
 
-    public void optMenu()
+    public void resetGame()
     {
-        SceneManager.LoadSceneAsync("Options Menu");
+
+        PlayerPrefs.SetInt("keys", 0);
+        PlayerPrefs.SetInt("HamadaKey", 0);
+        PlayerPrefs.SetInt("HelenKey", 0);
+        PlayerPrefs.SetInt("MazeKey", 0);
+        PlayerPrefs.Save();
+
     }
+
 
     public void quitGame()
     {

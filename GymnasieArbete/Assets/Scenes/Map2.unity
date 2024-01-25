@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 305835146}
-  speed: 400
+  speed: 500
   nextWaypointDistance: 3
 --- !u!58 &339461655
 CircleCollider2D:
@@ -330,7 +330,7 @@ Transform:
   m_GameObject: {fileID: 339461652}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.6, y: 4.4, z: -0.17535464}
+  m_LocalPosition: {x: -32.46, y: 23.2, z: -0.17535464}
   m_LocalScale: {x: 2.1658673, y: 2.1658673, z: 2.1658673}
   m_ConstrainProportionsScale: 0
   m_Children:
