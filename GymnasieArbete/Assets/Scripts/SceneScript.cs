@@ -9,7 +9,7 @@ public class MainMenuScript : MonoBehaviour
     public void playGame()
     {
         resetGame();
-        SceneManager.LoadSceneAsync("Map1");
+        SceneManager.LoadSceneAsync("StoryScreen");
     }
 
     public void resetGame()

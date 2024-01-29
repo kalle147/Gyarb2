@@ -88,29 +88,29 @@ public class FrågesportScript : MonoBehaviour
 
     void fråga1() 
     {
-        Debug.Log("fråga 1");
-        frågeText.text = "Här är första frågan.";
-        svarText[0].text = "Svar alternativ 1";
-        svarText[1].text = "Svar alternativ 2";
-        svarText[2].text = "Svar alternativ 3";
+        Debug.Log("Fråga 1");
+        frågeText.text = "När grundades Tibble Gymnasium?";
+        svarText[0].text = "1964";
+        svarText[1].text = "1967";
+        svarText[2].text = "1977";
     }
 
     void fråga2() 
     {
         Debug.Log("Fråga 2");
-        frågeText.text = "Här är andra frågan.";
-        svarText[0].text = "Svar alternativ 1";
-        svarText[1].text = "Svar alternativ 2";
-        svarText[2].text = "Svar alternativ 3";
+        frågeText.text = "Vilken är den bästa klassen på Tibble?";
+        svarText[0].text = "Te20a";
+        svarText[1].text = "Te21a";
+        svarText[2].text = "Te22a";
     }
 
     void fråga3() 
     {
         Debug.Log("Fråga 3");
-        frågeText.text = "Här är tredje frågan.";
-        svarText[0].text = "Svar alternativ 1";
-        svarText[1].text = "Svar alternativ 2";
-        svarText[2].text = "Svar alternativ 3";
+        frågeText.text = "När ska Te21a ta studenten?";
+        svarText[0].text = "28:e Maj";
+        svarText[1].text = "1:a Juni";
+        svarText[2].text = "3:e Juni";
     }
 
     void allaRätt()
