@@ -16,6 +16,7 @@ public class npcTalk : MonoBehaviour
     {
         textMesh.text = string.Empty;
         StartDialogue();
+
     }
 
     // Update is called once per frame
@@ -63,6 +64,7 @@ public class npcTalk : MonoBehaviour
             index++;
             textMesh.text = string.Empty;
             StartCoroutine(TypeLine());
+
         }
         else
         {

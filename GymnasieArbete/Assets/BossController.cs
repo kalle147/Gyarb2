@@ -18,7 +18,7 @@ public class BossController : MonoBehaviour
     {
         spacebarTapsPerSecond = player.spacebarTapsPerSecond;
 
-        if (spacebarTapsPerSecond > 0)
+        if (spacebarTapsPerSecond > 6)
         {
             timer += Time.deltaTime;
 
@@ -28,12 +28,19 @@ public class BossController : MonoBehaviour
                 // byt scene till death scene
                 
                 timer = 0f;
-                
+
+                SceneManager.LoadScene(8);
             }
         }
         else
         {
-            timer = 0f;
+            timer += Time.deltaTime;
+
+            if(timer >= 5f)
+            {
+                timer = 0f;
+                SceneManager.LoadScene(7);
+            }
         }
     }
 
