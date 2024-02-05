@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5f7f227ec912cfe48a7c8926dcd66c35
+guid: 6b34219eb6e1ab14a83eada2c82953d0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -71,8 +71,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 1
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rizza-sheet_0
+      name: Reza-_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13c8e341be13a554782d78fdeffecb20
-      internalID: -1512965957
+      spriteID: 2dfe60cbaf05fd848a9ac357c4cacc21
+      internalID: -442934764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rizza-sheet_1
+      name: Reza-_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62175b94b9f41a74dbe371037f28f6c1
-      internalID: -87928405
+      spriteID: 1ef63d4e41fea614fa568352ab4fe999
+      internalID: -739486280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rizza-sheet_2
+      name: Reza-_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31ef1e794ad906d4699e383c8c90f23d
-      internalID: 127288421
+      spriteID: 4398ffaa08636d848882e26e63e7a1b0
+      internalID: 860422810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rizza-sheet_3
+      name: Reza-_3
       rect:
         serializedVersion: 2
         x: 96
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 563b54d12c3609f4ca9bc1de6cd3a3d6
-      internalID: -1378734231
+      spriteID: 6b9e592c30dd09c468bcbc0fe169a3c2
+      internalID: 194928909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rizza-sheet_4
+      name: Reza-_4
       rect:
         serializedVersion: 2
         x: 128
@@ -221,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 066ddd3ee41505e44b97f52ae1f78cee
-      internalID: -2131157020
+      spriteID: 4365283c39eeea04c9e0d28e1d941e84
+      internalID: 1899750842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rizza-sheet_5
+      name: Reza-_5
       rect:
         serializedVersion: 2
         x: 160
@@ -242,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1dfddbba9881f4429214841214c0247
-      internalID: -1036500640
+      spriteID: 94fe5cabf10ac3841b7a5ad906eaae12
+      internalID: -468380777
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rizza-sheet_6
+      name: Reza-_6
       rect:
         serializedVersion: 2
         x: 192
@@ -263,14 +263,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b321ef6b6f46f0643ae7b93a31ef8e21
-      internalID: -1707294515
+      spriteID: a068c6138b44a784092e303c7663f407
+      internalID: -128264803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rizza-sheet_7
+      name: Reza-_7
       rect:
         serializedVersion: 2
         x: 224
@@ -284,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 438f8196d3642364cb1a109c039efa90
-      internalID: 1985582357
+      spriteID: b20f1b9ee406592469f8ba25ff2d8cdc
+      internalID: 1589813568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rizza-sheet_8
+      name: Reza-_8
       rect:
         serializedVersion: 2
         x: 256
@@ -305,14 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 781e23d2dbe29034fbeb50917361f8f8
-      internalID: -1150711190
+      spriteID: 7dd5171ff0e519e44b01bd80193c9ae4
+      internalID: 81321137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rizza-sheet_9
+      name: Reza-_9
       rect:
         serializedVersion: 2
         x: 288
@@ -326,14 +326,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e95d559cbb3d2348aeb2a0b5a381bc0
-      internalID: 1739967416
+      spriteID: 56a87b635d889864aae38a6701e50a15
+      internalID: 648889830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rizza-sheet_10
+      name: Reza-_10
       rect:
         serializedVersion: 2
         x: 320
@@ -347,8 +347,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61a6f10d9b3a85d4ebd72558b075c5da
-      internalID: -1219085302
+      spriteID: b830996d7105580438379dee4b41b76f
+      internalID: -20123189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reza-_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772bb4fb28cf1ee4391125f411922834
+      internalID: -1623232193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reza-_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 098181aba9056b847abbc4cb4dca7432
+      internalID: 947170037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reza-_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61dacb335a8210c4986340d77ce02490
+      internalID: -1069493703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reza-_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2885673298c1934f9967e8fd883dbc3
+      internalID: -510261074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reza-_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f81744c989dd96241b423bcb88adae69
+      internalID: -1825148066
       vertices: []
       indices: 
       edges: []
@@ -364,17 +469,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Rizza-sheet_0: -1512965957
-      Rizza-sheet_1: -87928405
-      Rizza-sheet_10: -1219085302
-      Rizza-sheet_2: 127288421
-      Rizza-sheet_3: -1378734231
-      Rizza-sheet_4: -2131157020
-      Rizza-sheet_5: -1036500640
-      Rizza-sheet_6: -1707294515
-      Rizza-sheet_7: 1985582357
-      Rizza-sheet_8: -1150711190
-      Rizza-sheet_9: 1739967416
+      Reza-_0: -442934764
+      Reza-_1: -739486280
+      Reza-_10: -20123189
+      Reza-_11: -1623232193
+      Reza-_12: 947170037
+      Reza-_13: -1069493703
+      Reza-_14: -510261074
+      Reza-_15: -1825148066
+      Reza-_2: 860422810
+      Reza-_3: 194928909
+      Reza-_4: 1899750842
+      Reza-_5: -468380777
+      Reza-_6: -128264803
+      Reza-_7: 1589813568
+      Reza-_8: 81321137
+      Reza-_9: 648889830
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

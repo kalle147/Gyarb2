@@ -4778,15 +4778,27 @@ PrefabInstance:
       value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 150369954392284580, guid: 382b6cb360663994b8bfce300aece605, type: 3}
+      propertyPath: lines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 150369954392284580, guid: 382b6cb360663994b8bfce300aece605, type: 3}
       propertyPath: lines.Array.data[0]
-      value: "Reza: Jag \xE4r bossen..."
+      value: 'Reza och Jay: Du kan inte besegra mig'
       objectReference: {fileID: 0}
     - target: {fileID: 150369954392284580, guid: 382b6cb360663994b8bfce300aece605, type: 3}
       propertyPath: lines.Array.data[1]
-      value: 'Jay: Jag med, hahahahhaha...'
+      value: 'Jay: hahahahhaha...'
       objectReference: {fileID: 0}
     - target: {fileID: 150369954392284580, guid: 382b6cb360663994b8bfce300aece605, type: 3}
       propertyPath: lines.Array.data[2]
+      value: "Du: \xC5hh nejjj, va l\xE4skigt"
+      objectReference: {fileID: 0}
+    - target: {fileID: 150369954392284580, guid: 382b6cb360663994b8bfce300aece605, type: 3}
+      propertyPath: lines.Array.data[3]
+      value: "(Klicka p\xE5 [Space] s\xE5 snabbt du kan f\xF6r att besegra bossen)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 150369954392284580, guid: 382b6cb360663994b8bfce300aece605, type: 3}
+      propertyPath: lines.Array.data[4]
       value: "Du: \xC5hh nejjj, va l\xE4skigt"
       objectReference: {fileID: 0}
     - target: {fileID: 5097281436363365033, guid: 382b6cb360663994b8bfce300aece605, type: 3}
