@@ -33342,6 +33342,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueBox
       objectReference: {fileID: 0}
+    - target: {fileID: 7941558881475991015, guid: 382b6cb360663994b8bfce300aece605, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33484,6 +33488,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 447447708}
+    - target: {fileID: 6214357539462473936, guid: 21d534ed07998994eb702287b7dc33da, type: 3}
+      propertyPath: speed1
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 6214357539462473936, guid: 21d534ed07998994eb702287b7dc33da, type: 3}
       propertyPath: KeyManager
       value: 
