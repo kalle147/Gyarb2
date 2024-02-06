@@ -25,7 +25,11 @@ public class KeyManager : MonoBehaviour
 
     public void addKey()
     {
+        Debug.Log("AddKey function");
+        Debug.Log("test, nycklar innan"+ keys);
+
         if(keys <= 2) keys++;
-        
+
+        Debug.Log("test, nycklar efter" + keys);
     }
 }

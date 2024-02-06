@@ -16,15 +16,13 @@ public class KeyPickup : MonoBehaviour
         EtoInteract.SetActive(IsInRange);
 
 
-        if (IsInRange && Input.GetKeyDown(KeyCode.E))
+        if (IsInRange && !ObtainedMazeKey() && Input.GetKeyDown(KeyCode.E))
         {
             
             Debug.Log("Key Interact");
-            if (!ObtainedMazeKey()) // inte redan fått den
-            {
-                GainMazeKey();
-                KeyManager.addKey();
-            }
+            
+            GainMazeKey();
+                
             KeyManager.addKey();
 
             EtoInteract.SetActive(false);

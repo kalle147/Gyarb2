@@ -19,6 +19,7 @@ public class MainMenuScript : MonoBehaviour
         PlayerPrefs.SetInt("HamadaKey", 0);
         PlayerPrefs.SetInt("HelenKey", 0);
         PlayerPrefs.SetInt("MazeKey", 0);
+        PlayerPrefs.SetFloat("timer", 0);
         PlayerPrefs.Save();
 
     }
